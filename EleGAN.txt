@@ -1,0 +1,19 @@
+import cv2
+import numpy as np
+
+kernel = np.ones((2,2), np.uint8) 
+
+i = 1
+while i < 75:
+	img = cv2.imread("Hack (" + str(i) + ").jpg")
+	edges = 255-cv2.Canny(img, 300, 300)
+	erosion = cv2.erode(edges, kernel, iterations=1) 
+	cv2.imwrite("Disc_" + str(i) + ".jpg", erosion)
+	i += 1
+
+
+
+img = cv2.imread("Hack (" + str(1) + ").jpg")
+edges = 255-cv2.Canny(img, 450, 450)
+erosion = cv2.erode(edges, kernel, iterations=1) 
+cv2.imwrite("Disc_" + str(1) + ".jpg", erosion)	 
