@@ -11,3 +11,4 @@ while i < 75:							###Depends on the number of images
 	cv2.imwrite("Disc_" + str(i) + ".jpg", erosion)
 	i += 1
 
+#indices = np.where(edges == [0])
