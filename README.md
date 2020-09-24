@@ -37,6 +37,8 @@ TBD: Still figuring this one out 😅
 Update: Used [Pix2PixHD](https://github.com/NVIDIA/pix2pixHD) model (a much more advanced CoGAN than Pix2Pix which uses semantic segmentation in the input labels to drastically improve the results). It was not possible to do the same for our custom dataset, but there were dramatic improvements by increasing the size of training dataset and restricting the images to mostly one or two type of objects.
 Some of the test results: 
 
+![](Input-output_01.jpg)
+![](Input-output_02.jpg)
 
 ## Resources & Credits/Thanks
 
